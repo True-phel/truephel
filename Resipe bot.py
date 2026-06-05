@@ -5,6 +5,9 @@ from aiogram.fsm.storage.memory import MemoryStorage
 import asyncio
 import os
 from rapidfuzz import process, fuzz
+from dotenv import load_dotenv  # ← додано
+
+load_dotenv()  # ← завантажує .env файл
 
 TOKEN = os.getenv("BOT_TOKEN", "token")
 
